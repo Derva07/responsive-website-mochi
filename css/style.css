@@ -154,7 +154,7 @@ body {
   position: absolute;
   width: 100%;
   height: 30%;
-  bottom: 0;
+  bottom: -2rem;
   background: linear-gradient(
     0deg,
     rgba(8, 51, 68, 1) 10%,
@@ -313,6 +313,28 @@ body {
   margin: 1rem auto 1rem;
 }
 /* Menu Section Selesai */
+
+/* Product Section Mulai */
+.products .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.products .product-card {
+  text-align: center;
+  border: 1px solid #f0f9ff;
+  padding: 2rem;
+}
+
+.products .product-image img {
+  width: 1000px;
+  height: 1000px;
+  padding: 1.5rem 5%;
+}
+
+/* Product Section Selesai */
 
 /* Contact Section Mulai */
 .contact {
