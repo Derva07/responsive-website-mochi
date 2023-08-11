@@ -239,6 +239,8 @@ body {
 
 .about .row {
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .about .row .about-img {
@@ -252,14 +254,13 @@ body {
 
 .about .row .content h3 {
   font-size: 2.2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   margin-left: 1rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 3);
 }
 
 .about .row .content p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   margin-left: 1rem;
   font-size: 1.1rem;
   font-weight: 300;
@@ -328,12 +329,66 @@ body {
   padding: 2rem;
 }
 
-.products .product-image img {
-  width: 1000px;
-  height: 1000px;
-  padding: 1.5rem 5%;
+.products .product-icon {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
+.products .product-icon a {
+  width: 4rem;
+  height: 4rem;
+  color: var(--fontColor);
+  margin: 0.3rem;
+  border: 1px solid var(--primaryColor);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products .product-icon a:hover {
+  background-color:  var(--primaryColor);
+  border: 1px solid var(--primaryColor);
+}
+
+.products .product-image {
+  padding: 1rem 0;
+}
+
+.products .product-image img {
+  height: 20rem;
+  border-radius: 10%;
+}
+
+.products .product-content h3 {
+  font-size: 2rem;
+}
+
+.products .product-stars {
+  font-size: 1.7rem;
+  padding: 0.8rem;
+  color: #eab308;
+}
+
+.products .product-stars .product-stars1 {
+  fill: #eab308;
+}
+
+.products .product-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.products .product-price span {
+  text-decoration: line-through;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  color: var(--secondaryColor);
+  font-weight: bold;
+}
+
+.products .product-price 
 /* Product Section Selesai */
 
 /* Contact Section Mulai */
@@ -345,7 +400,7 @@ body {
 .contact .row {
   display: flex;
   margin-top: 2rem;
-  background-color: #984063;
+  background-color: var(--secondaryColor);
   box-shadow: 5px 5px 5px rgba(240, 249, 255, 2);
 }
 
@@ -360,7 +415,7 @@ body {
   font-size: 2rem;
   flex: 1 1 45rem;
   margin-top: -3rem;
-  color: #90a366;
+  color: var(--fontColor);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 3);
 }
 
@@ -400,12 +455,13 @@ body {
   display: inline-block;
   padding: 1rem 3rem;
   font-size: 1.7;
-  color: #fff;
-  background-color: var(--primaryColor);
+  color: #000;
+  background-color: var(--fontColor);
   cursor: pointer;
   box-shadow: 1px 1px 5px rgba(8, 51, 68, 2);
 }
 
+/* Footer Mulai */
 footer {
   background-color: var(--primaryColor);
   text-align: center;
@@ -454,6 +510,8 @@ footer .credit {
 footer .credit a {
   color: var(--bgColor);
 }
+/* Footer Selesai */
+
 /* Media Queries */
 
 /* Laptop */
