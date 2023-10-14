@@ -22,7 +22,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bgColor);
   color: var(--fontColor);
-  min-height: 50000px;
+  /*min-height: 50000px;*/
 }
 
 /* Navbar Mulai */
